@@ -17,8 +17,7 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target)
     {
-		std::map<int,int> nums_map;
-				
+		std::map<int,int> nums_map;				
 		for(int index=0;index<nums.size();index++){
             int target_num=target-nums[index];
 			std::map<int,int>::iterator it=nums_map.find(target_num);
